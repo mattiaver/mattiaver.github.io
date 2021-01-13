@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.verborgen {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -10000px;
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-areas:
+            "gheader gheader gheader"
+            "gmain gmain gmain"
+            "gfooter gfooter gfooter";
+    height: 100vh;
+    grid-gap: 10px;
+
+}
+
+.gmain {
+
+    grid-area: gmain;
+
+}
+
+.gheader {
+    background-image: url("fotos/header.jpg");
+    grid-area: gheader;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+
+body {
+    color: black;
+    background-color: #F1FBFD;
+}
+
+.nav {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    align-self: center;
+    justify-self: center;
+    transform: translate(-10px, 140px);
+}
+
+.bighead {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    transform: translate(-10px, 80px);
+    display: inline-block;
+    line-height: 40px;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    align-self: center;
+    justify-self: center;
+    color: #FFF;
+
+}
+
+
+.navlist {
+    align-self: center;
+    justify-self: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    grid-column-start: 1;
+
+}
+
+
+.navitem a {
+    color: #FFF;
+
+}
+
+.navlist a:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.item-flex {
+    padding-top: 200px;
+    flex-basis: 30%;
+    padding-right: 300px;
+}
+
+
+.fotovoorpagina {
+    padding-top: 100px;
+    padding-right: 220px;
+    padding-bottom:100px;
+    width: 250px;
+    height: auto;
+    justify-content: flex-end;
+}
+
+.footer {
+    grid-area: gfooter;
+    background-color: #E3EAF0;
+    width:auto;
+
+}
+
+.flexcontainer{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.items-flex{
+
+}
+
+.itemfooter {
+    color:#666;
+    display:flex;
+}
+
+.facebook{
+    padding-right:5px;
+    cursor: pointer;
+}
+
+.instagram{
+    padding-right:5px;
+    cursor: pointer;
+}
+
+.twitter{
+    padding-right:5px;
+    cursor: pointer;
+}
+
+.linkedin{
+    cursor: pointer;
+
+}
+
+.instagramlink {
+    color:palevioletred;
+}
+
+
+.blauwlink{
+    color:royalblue;
+}
+
+.image{
+    height:300px;
+    width:300px;
+    align-self: center;
+    justify-self: center;
+    transform: translate(0px, -20px);
+
+
+}
+
+.gridcontaineritems{
+    grid-area:gmain;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+
+}
+
+.gridsection1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:1;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    transform: translate(60px, 80px);
+
+
+}
+
+.tekstitem1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.gridsection2{
+grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    transform: translate(60px, 80px);
+
+
+}
+
+.tekstitem2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.kopgrid2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    transform: translate(0px, 95px);
+
+}
+
+.gridsection3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end:3;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    transform: translate(60px, 0px);
+
+
+}
+
+.tekstitem3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.gridpagina3{
+    grid-area: gmain;
+    display:grid;
+    text-align: left;
+
+}
+
+.section1{
+
+    padding-bottom:50px;
+    padding-left: 50px;
+    padding-top: 100px;
+
+}
+
+.section2{
+
+    padding-bottom:50px;
+    padding-left: 50px;
+
+}
+
+.section3{
+    padding-bottom:100px;
+    padding-left: 50px;
+
+}
